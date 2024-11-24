@@ -2,121 +2,350 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/test/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/project-SurvivorsTeam13/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/test/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/test/assets/styles-DvPDDfy5.css">
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="/project-SurvivorsTeam13/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/project-SurvivorsTeam13/assets/vendor-MyctyYBz.js">
+    <link rel="stylesheet" crossorigin href="/project-SurvivorsTeam13/assets/vendor-BZ_WhpHG.css">
+    <link rel="stylesheet" crossorigin href="/project-SurvivorsTeam13/assets/index-BGqkoJxg.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/test/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <header class="header-page">header</header>
 
 
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/test/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
+      <section class="hero-page" id="hero">
+  <div class="container hero-container">
+    <div class="hero-wrapper-left">
+      <h1 class="hero-title">Hello, I am <span>Fullstack developer</span></h1>
+      <a href="#" class="hero-btn"
+        ><svg class="hero-btn-ico" width="22" height="22">
+          <use href="../img/symbol-defs.svg#icon-arrow-btn"></use>
+        </svg>
+        Order the project<span class="hero-btn-span"></span>
       </a>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+
+    <div class="hero-wrapper-right">
+      <img
+        class="hero-img"
+        src="../img/photo/photo_hero_desktop.jpg"
+        alt="Photo developer"
+        srcset="../img/photo/photo_hero_desktop@2x.jpg 2x"
+        width="592"
+        height="444"
+      />
+      <p class="hero-text">
+        I work with people all over the world to create
+        <span>impressive</span> and <span>functional websites</span> that
+        reflect each client’s unique personality.
+      </p>
+    </div>
+  </div>
+  <aside class="hero-social-wrapper">
+    <div class="container">
+      <ul class="hero-social-list">
+        <li class="hero-social-item">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            class="hero-social-link"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Instagram</a
+          >
+        </li>
+        <li class="hero-social-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            class="hero-social-link"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Facebook</a
+          >
+        </li>
+        <li class="hero-social-item">
+          <a
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            class="hero-social-link"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Linkedin</a
+          >
+        </li>
+        <li class="hero-social-item">
+          <a
+            href="https://github.com/Oksana-2024/project-SurvivorsTeam13"
+            class="hero-social-link"
+            target="_blank"
+            rel="noreferrer noopener"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+  </aside>
+</section>
+
+      <section class="about-me-page">
+  <div class="about-container container">
+    <h2 class="about-title">About <span class="about-title-two">me</span></h2>
+
+    <div class="about-content">
+      <div class="about-picture-bio">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/project-SurvivorsTeam13/assets/about_desktop-ClwqnJ2r.jpg 1x, /project-SurvivorsTeam13/assets/about_desktop@2x-B5UoSGN7.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-SurvivorsTeam13/assets/about_tablet-BDBTl7MZ.jpg 1x, /project-SurvivorsTeam13/assets/about_tablet@2x-r-70sorM.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/project-SurvivorsTeam13/assets/about_mobile-KTPvyzze.jpg 1x, /project-SurvivorsTeam13/assets/about_mobile@2x-_OqwbZAo.jpg 2x"
+          />
+          <img
+            src="/project-SurvivorsTeam13/assets/about_mobile-KTPvyzze.jpg"
+            alt="Lloyd Jefferson"
+            width="320"
+            height="374"
+            class="about-image"
+          />
+        </picture>
+
+        <div class="about-bio">
+          <h3 class="about-subtitle">BIO</h3>
+          <p class="about-text">
+            I'm Lloyd Jefferson, a talented programmer specializing in software
+            development. My expertise spans various programming languages and
+            technologies, and I am dedicated to continually enhancing my skills.
+            I thrive on seeking unconventional and creative solutions to
+            problems, leveraging a high level of analytical skills to
+            effectively tackle even the most challenging tasks.
+          </p>
+          <p class="about-text">
+            Adaptable to both independent and team-oriented work, I collaborate
+            seamlessly with colleagues, exchanging ideas and finding optimal
+            solutions. My professional maturity enables me to navigate
+            challenges and stressful situations with a calm demeanor,
+            maintaining a consistently high quality of work. Committed to
+            self-improvement, I actively engage in studying new technologies and
+            practices to stay current with the latest innovations in the field.
+          </p>
+        </div>
+      </div>
+      <div class="about-education-role">
+        <ul class="education-role-list">
+          <li class="education-role-list-item">
+            <h3 class="about-subtitle">EDUCATION</h3>
+            <ul class="education-role-sublist">
+              <li class="education-role-sublist-item">
+                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+                York
+              </li>
+              <li class="education-role-sublist-item">
+                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                School, New York
+              </li>
+              <li class="education-role-sublist-item">
+                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+              </li>
+            </ul>
+          </li>
+          <li class="education-role-list-item">
+            <h3 class="about-subtitle">ROLE</h3>
+            <ul class="education-role-sublist">
+              <li class="education-role-sublist-item">Frontend development</li>
+              <li class="education-role-sublist-item">
+                HeadlessCMS, Wordpress
+              </li>
+              <li class="education-role-sublist-item">Blender (enjoy)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
+      <section id="tech-skills" class="tech-skills-section section">
+  <div class="tech-skills-container">
+    <h2 class="visually-hidden">Technologiess</h2>
 
+    <div class="even-container">
+      <div class="even-line">
+        <ul class="even-list">
+          <li>Java Script</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>React Native</li>
+          <li>Typescript</li>
+          <li>Html/Css</li>
+          <li>React Native</li>
+          <li>Typescript</li>
+          <li>Html/Css</li>
+        </ul>
+        <ul class="even-list">
+          <li>Java Script</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>React Native</li>
+          <li>Typescript</li>
+          <li>Html/Css</li>
+          <li>React Native</li>
+          <li>Typescript</li>
+          <li>Html/Css</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="moving-container uneven-container">
+      <div class="uneven">
+        <ul class="uneven-list">
+          <li class="uneven-item">Java Script</li>
+          <li class="uneven-item">React</li>
+          <li class="uneven-item">Node.js</li>
+          <li class="uneven-item">React Native</li>
+          <li class="uneven-item">Typescript</li>
+          <li class="uneven-item">Html/Css</li>
+          <li class="uneven-item">React Native</li>
+          <li class="uneven-item">Typescript</li>
+          <li class="uneven-item">Html/Css</li>
+        </ul>
+        <ul class="uneven-list">
+          <li class="uneven-item">Java Script</li>
+          <li class="uneven-item">React</li>
+          <li class="uneven-item">Node.js</li>
+          <li class="uneven-item">React Native</li>
+          <li class="uneven-item">Typescript</li>
+          <li class="uneven-item">Html/Css</li>
+          <li class="uneven-item">React Native</li>
+          <li class="uneven-item">Typescript</li>
+          <li class="uneven-item">Html/Css</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="my-projects-page">my-projects</section>
+      <section class="benefits-page visually-hidden">benefits</section>
+<section class="container benefits-container">
+  <h2 class="benefits-title">
+    <span class="benefits-span">BENEFITS</span> OF WORKING WITH ME
+  </h2>
+  <ul class="benefits-team">
+    <li class="benefits-li">
+      <div class="benefits-icon-box">
+        <svg class="benefits-icon" width="24" height="24">
+          <use href="../img/symbol-defs.svg#icon-user"></use>
+        </svg>
+      </div>
+      <h4 class="benefits-subtitle">Expertise</h4>
+      <p class="benefits-text text1">
+        With extensive experience in development, I have a deep understanding of
+        programming and website development.
+      </p>
+    </li>
+    <li class="benefits-li">
+      <div class="benefits-icon-box">
+        <svg class="benefits-icon" width="24" height="24">
+          <use href="../img/symbol-defs.svg#icon-message-chat-circle"></use>
+        </svg>
+      </div>
+      <h4 class="benefits-subtitle">Communication</h4>
+      <p class="benefits-text text2">
+        Understanding your needs and wants is my priority and I am always
+        available for discussions and open to corrections.
+      </p>
+    </li>
+    <li class="benefits-li">
+      <div class="benefits-icon-box">
+        <svg class="benefits-icon" width="24" height="24">
+          <use href="../img/symbol-defs.svg#icon-brush"></use>
+        </svg>
+      </div>
+      <h4 class="benefits-subtitle">Art</h4>
+      <p class="benefits-text text3">
+        Thanks to my creative nature, I am ready to accept challenges and help
+        you bring your ideas to life.
+      </p>
+    </li>
+    <li class="benefits-li">
+      <div class="benefits-icon-box">
+        <svg class="benefits-icon" width="24" height="24">
+          <use href="../img/symbol-defs.svg#icon-hourglass"></use>
+        </svg>
+      </div>
+      <h4 class="benefits-subtitle">Urgent execution</h4>
+      <p class="benefits-text text4">
+        I understand how important time is to you. Ready to work quickly and
+        efficiently, without reducing the quality of work.
+      </p>
+    </li>
+  </ul>
+</section>
+
+      <section class="faq-page">Frequently asked question</section>
+      <section class="reviews-page">reviews</section>
+      <section class="work-together-page">work-together</section>
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
+    <footer class="footer-page">
+  <div class="container footer-container">
+    <div class="footer-container-logo">
+      <a class="footer-logo" href="../index.html"
+        >Lloyd<span class="footer-logo-jefferson">Jefferson.</span></a
       >
-        GoIT team
-      </a>
-    </p>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a
+            class="footer-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer-item">
+          <a
+            class="footer-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </li>
+        <li class="footer-item">
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Linkedin</a
+          >
+        </li>
+        <li class="footer-item">
+          <a
+            class="footer-link"
+            href="https://github.com/Oksana-2024/project-SurvivorsTeam13"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="footer-copyright">© Copyright 2024. Made by LloydJefferson</p>
   </div>
 </footer>
 
