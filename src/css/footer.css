@@ -1,21 +1,75 @@
-.footer {
-  padding: 20px 0;
+.footer-page {
+  border-top: 1px solid var(--border-footer);
+  padding-top: 40px;
+  padding-bottom: 24px;
 }
-.footer-desc {
-  text-align: center;
+
+.footer-logo {
+  font-family: var(--second-font-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 32px;
 }
+
+.footer-logo-jefferson {
+  color: var(--accent-color);
+}
+
+/* Список соціальних мереж */
+
+.footer-list {
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .footer-link {
-  position: relative;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+
+.footer-copyright {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 197px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-list {
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    gap: 40px;
+  }
+
+  .footer-copyright {
+    width: 351px;
+    height: 24px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-container-logo {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-logo {
+    margin-right: 169px;
+  }
 }
