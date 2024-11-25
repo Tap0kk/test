@@ -13,12 +13,79 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/test/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/test/assets/vendor-MyctyYBz.js">
-    <link rel="stylesheet" crossorigin href="/test/assets/vendor-BZ_WhpHG.css">
-    <link rel="stylesheet" crossorigin href="/test/assets/index-C5tvS6n9.css">
+    <link rel="modulepreload" crossorigin href="/test/assets/vendor-wykUIgAI.js">
+    <link rel="stylesheet" crossorigin href="/test/assets/vendor-DsZ3AUy1.css">
+    <link rel="stylesheet" crossorigin href="/test/assets/index-5cGDP6O9.css">
   </head>
   <body>
-    <header class="header-page">header</header>
+    <header class="header-page">
+  <div class="header-container container">
+    <a class="header__logo" href="./index.html"
+      >Lloyd<span class="logo-green">jefferson.</span></a
+    >
+
+    <nav class="header__nav">
+      <label for="switch" class="switch">
+        <input type="checkbox" name="switch" id="switch" />
+        <span class="slider round"></span>
+      </label>
+
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link js-menu__link" href="#about-me"> About me </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link js-menu__link" href="#my-projects"> Projects </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link js-menu__link" href="#work-together">
+            Contacts
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hamburger-menu">
+      <button type="button" class="hamburger-menu-button">
+        <svg class="icon-bar" width="22" height="14">
+          <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-baget"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <div class="mod-win-head">
+      <a class="header__logo" href="./index.html"
+        >Lloyd<span class="logo-green">jefferson.</span></a
+      >
+
+      <button type="button" class="mobile-menu__close">
+        <svg class="mobile-menu__close" width="16" height="16">
+          <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-drop-list">
+      <nav class="modal-header__nav">
+        <ul class="menu__list menu__mobile__list">
+          <li class="menu__item">
+            <a class="menu__link js-menu__link" href="#about-me"> About me </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link js-menu__link" href="#my-projects">
+              Projects
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link js-menu__link" href="#work-together">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
 
 
     <main>
@@ -26,9 +93,9 @@
   <div class="container hero-container">
     <div class="hero-wrapper-left">
       <h1 class="hero-title">Hello, I am <span>Fullstack developer</span></h1>
-      <a href="#" class="hero-btn"
+      <a href="#work-together" class="hero-btn"
         ><svg class="hero-btn-ico" width="22" height="22">
-          <use href="../img/symbol-defs.svg#icon-arrow-btn"></use>
+          <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-btn"></use>
         </svg>
         Order the project<span class="hero-btn-span"></span>
       </a>
@@ -37,9 +104,9 @@
     <div class="hero-wrapper-right">
       <img
         class="hero-img"
-        src="../img/photo/photo_hero_desktop.jpg"
+        src="/test/assets/photo_hero_desktop-bZU4RRn1.jpg"
         alt="Photo developer"
-        srcset="../img/photo/photo_hero_desktop@2x.jpg 2x"
+        srcset="/test/assets/photo_hero_desktop@2x-BovOu0bl.jpg 2x"
         width="592"
         height="444"
       />
@@ -94,7 +161,7 @@
   </aside>
 </section>
 
-      <section class="about-me-page">
+      <section class="about-me-page" id="about-me">
   <div class="about-container container">
     <h2 class="about-title">About <span class="about-title-two">me</span></h2>
 
@@ -237,7 +304,218 @@
   </div>
 </section>
 
-      <section class="my-projects-page">my-projects</section>
+      <section class="my-projects-page">
+  <div class="container my-project-container">
+    <h2 class="titel-my-projects" id="my-projects">MY <span class="green">PROJECTS</span></h2>
+    <ul>
+      <li class="li-class-project">
+        <img
+          src="/test/assets/project_1-Ce6xAJOh.jpg"
+          alt="1"
+          width="320"
+          srcset="/test/assets/project_1@2x-KJv1c-xL.jpg 2x"
+          class="project-img"
+        />
+        <p class="small-desc">React, JavaScript, Node JS, Git</p>
+        <div class="box-button">
+          <h3 class="project-subtitle">POWER PULSE WEBSERVICE</h3>
+          <a class="projects-button" href="https://github.com/Oksana-2024/project-SurvivorsTeam13"
+            target="_blank">
+            VISIT
+            <svg class="icon-project" width="24" height="24">
+              <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="li-class-project">
+        <img
+          src="/test/assets/project_2-D4YBvFO1.jpg"
+          alt="2"
+          width="300"
+          srcset="/test/assets/project_2@2x-DWkPWvZb.jpg 2x"
+          class="project-img"
+        />
+        <p>React, JavaScript, Node JS, Git</p>
+        <div class="box-button">
+          <h3 class="project-subtitle">STARLIGHT STUDIO LANDING PAGE</h3>
+          <a class="projects-button" href="https://github.com/Oksana-2024/project-SurvivorsTeam13"
+            target="_blank">
+            VISIT
+            <svg class="icon-project" width="24" height="24">
+              <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="li-class-project">
+        <img
+          src="/test/assets/project_3-DlvVVowu.jpg"
+          alt="3"
+          width="300"
+          srcset="/test/assets/project_3@2x-D7G28gER.jpg 2x"
+          class="project-img"
+        />
+        <p>React, JavaScript, Node JS, Git</p>
+        <div class="box-button">
+          <h3 class="project-subtitle">ENERGY FLOW WEBSERVICE</h3>
+          <a class="projects-button" href="https://github.com/Oksana-2024/project-SurvivorsTeam13"
+            target="_blank">
+            VISIT
+            <svg class="icon-project" width="24" height="24">
+              <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="li-class-project hidden">
+        <img
+          src="/test/assets/project_4-DE2VhDfy.jpg"
+          alt="4"
+          width="300"
+          srcset="/test/assets/project_4@2x-Dfeiwoju.jpg 2x"
+          class="project-img"
+        />
+        <p>React, JavaScript, Node JS, Git</p>
+        <div class="box-button">
+          <h3 class="project-subtitle">FRUITBOX ONLINE STORE</h3>
+          <a class="projects-button" href="https://github.com/Oksana-2024/project-SurvivorsTeam13"
+            target="_blank">
+            VISIT
+            <svg class="icon-project" width="24" height="24">
+              <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="li-class-project hidden">
+        <img
+          src="/test/assets/project_5-z8cHFnev.jpg"
+          alt="5"
+          width="300"
+          srcset="/test/assets/project_5@2x-rUX7s_nq.jpg 2x"
+          class="project-img"
+        />
+        <p>React, JavaScript, Node JS, Git</p>
+        <div class="box-button">
+          <h3 class="project-subtitle">CHEGO JEWELRY WEBSITE</h3>
+          <a class="projects-button" href="https://github.com/Oksana-2024/project-SurvivorsTeam13"
+            target="_blank">
+            VISIT
+            <svg class="icon-project" width="24" height="24">
+              <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="li-class-project hidden">
+        <img
+          src="/test/assets/project_6-B-bNGDhQ.jpg"
+          alt="6"
+          width="300"
+          srcset="/test/assets/project_6@2x-BhECxKwj.jpg 2x"
+          class="project-img"
+        />
+        <p>React, JavaScript, Node JS, Git</p>
+        <div class="box-button">
+          <h3 class="project-subtitle">MIMINO WEBSITE</h3>
+          <a class="projects-button" href="https://github.com/Oksana-2024/project-SurvivorsTeam13"
+            target="_blank">
+            VISIT
+            <svg class="icon-project" width="24" height="24">
+              <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="li-class-project hidden">
+        <img
+          src="/test/assets/project_7-Dh9VPMF_.jpg"
+          alt="7"
+          width="300"
+          srcset="/test/assets/project_7@2x-Oiy55Hq6.jpg 2x"
+          class="project-img"
+        />
+        <p>React, JavaScript, Node JS, Git</p>
+        <div class="box-button">
+          <h3 class="project-subtitle">VYSHYVSNKA VIBES LANDING PAGE</h3>
+          <a class="projects-button" href="https://github.com/Oksana-2024/project-SurvivorsTeam13"
+            target="_blank">
+            VISIT
+            <svg class="icon-project" width="24" height="24">
+              <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="li-class-project hidden">
+        <img
+          src="/test/assets/project_8-wFzEiGCC.jpg"
+          alt="8"
+          width="300"
+          srcset="/test/assets/project_8@2x-Cq_IjSoh.jpg 2x"
+          class="project-img"
+        />
+        <p>React, JavaScript, Node JS, Git</p>
+        <div class="box-button">
+          <h3 class="project-subtitle">GREEN HARVEST ONLINE STORE</h3>
+          <a class="projects-button" href="https://github.com/Oksana-2024/project-SurvivorsTeam13"
+            target="_blank">
+            VISIT
+            <svg class="icon-project" width="24" height="24">
+              <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="li-class-project hidden">
+        <img
+          src="/test/assets/project_9-D0y9WbRm.jpg"
+          alt="9"
+          width="300"
+          srcset="/test/assets/project_9@2x-ChHidP7p.jpg 2x"
+          class="project-img"
+        />
+        <p>React, JavaScript, Node JS, Git</p>
+        <div class="box-button">
+          <h3 class="project-subtitle">WALLET WEBSERVICE</h3>
+          <a class="projects-button" href="https://github.com/Oksana-2024/project-SurvivorsTeam13"
+            target="_blank">
+            VISIT
+            <svg class="icon-project" width="24" height="24">
+              <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="li-class-project hidden">
+        <img
+          src="/test/assets/project_10-BCb_gH08.jpg"
+          alt="10"
+          width="300"
+          srcset="/test/assets/project_10@2x-CdM3Wli0.jpg 2x"
+          class="project-img"
+        />
+        <p>React, JavaScript, Node JS, Git</p>
+        <div class="box-button">
+          <h3 class="project-subtitle">ENGLISH EXCELLENCE WEBSERVICE</h3>
+          <a class="projects-button" href="https://github.com/Oksana-2024/project-SurvivorsTeam13"
+            target="_blank">
+            VISIT
+            <svg class="icon-project" width="24" height="24">
+              <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+    </ul>
+    <button class="load-container line" id="loadMore" type="button">
+      LOAD MORE
+    </button>
+    <div class="decor-line"></div>
+  </div>
+</section>
+
       <section class="benefits-page visually-hidden">benefits</section>
 <section class="container benefits-container">
   <h2 class="benefits-title">
@@ -247,7 +525,7 @@
     <li class="benefits-li">
       <div class="benefits-icon-box">
         <svg class="benefits-icon" width="24" height="24">
-          <use href="../img/symbol-defs.svg#icon-user"></use>
+          <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-user"></use>
         </svg>
       </div>
       <h4 class="benefits-subtitle">Expertise</h4>
@@ -259,7 +537,7 @@
     <li class="benefits-li">
       <div class="benefits-icon-box">
         <svg class="benefits-icon" width="24" height="24">
-          <use href="../img/symbol-defs.svg#icon-message-chat-circle"></use>
+          <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-message-chat-circle"></use>
         </svg>
       </div>
       <h4 class="benefits-subtitle">Communication</h4>
@@ -271,7 +549,7 @@
     <li class="benefits-li">
       <div class="benefits-icon-box">
         <svg class="benefits-icon" width="24" height="24">
-          <use href="../img/symbol-defs.svg#icon-brush"></use>
+          <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-brush"></use>
         </svg>
       </div>
       <h4 class="benefits-subtitle">Art</h4>
@@ -283,7 +561,7 @@
     <li class="benefits-li">
       <div class="benefits-icon-box">
         <svg class="benefits-icon" width="24" height="24">
-          <use href="../img/symbol-defs.svg#icon-hourglass"></use>
+          <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-hourglass"></use>
         </svg>
       </div>
       <h4 class="benefits-subtitle">Urgent execution</h4>
@@ -295,15 +573,230 @@
   </ul>
 </section>
 
-      <section class="faq-page">Frequently asked question</section>
-      <section class="reviews-page">reviews</section>
-      <section class="work-together-page">work-together</section>
+      <section class="faq-page">
+  <div class="accordion-container container">
+    <div class="faq-decor">
+      <h2 class="faq-title">
+        Frequently Asked
+        <span class="accent-title">Questions</span>
+      </h2>
+    </div>
+    <div class="accordion">
+      <div class="accordion-item">
+        <h3 class="accordion-subtitle"  aria-expanded="false">
+          What programming languages are most often used in your project?
+          <svg class="icon" width="32" height="32">
+            <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-sign"></use>
+          </svg>
+        </h3>
+        <div class="accordion-body">
+          <p class="accordion-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-subtitle"  aria-expanded="false">
+          What are the deadlines for the project?
+          <svg class="icon" width="32" height="32">
+            <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-sign"></use>
+          </svg>
+        </h3>
+        <div class="accordion-body">
+          <p class="accordion-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-subtitle"  aria-expanded="false">
+          What payment methods do you accept?
+          <svg class="icon" width="32" height="32">
+            <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-sign"></use>
+          </svg>
+        </h3>
+        <div class="accordion-body">
+          <p class="accordion-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-subtitle"  aria-expanded="false">
+          How can I contact you?
+          <svg class="icon" width="32" height="32">
+            <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-sign"></use>
+          </svg>
+        </h3>
+        <div class="accordion-body">
+          <p class="accordion-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-subtitle" aria-expanded="false">
+          Do you provide advice or support?
+          <svg class="icon" width="32" height="32">
+            <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-sign"></use>
+          </svg>
+        </h3>
+        <div class="accordion-body">
+          <p class="accordion-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-subtitle" aria-expanded="false">
+          What does the process of developing a software product look like?
+          <svg class="icon" width="32" height="32">
+            <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-sign"></use>
+          </svg>
+        </h3>
+        <div class="accordion-body">
+          <p class="accordion-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews-page">
+  <div class="container container-reviews">
+    <h2 class="title-reviews">reviews</h2>
+    <div class="reviews-swiper">
+      <div class="swiper-wrapper"></div>
+      <div class="swiper-btn">
+        <button class="left-arrow" type="button" disabled>
+          <svg class="reviews-icon" width="20" height="20">
+            <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-narrow"></use>
+          </svg>
+        </button>
+        <button class="right-arrow" type="button">
+          <svg class="reviews-icon" width="20" height="20">
+            <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-arrow-narrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="work-together-page">
+    <div class="container work-together-container">
+        <h2 class="work-together-title" id="work-together">let’s
+            <span class="work-together-accent">work together</span>
+        </h2>
+        <div class="work-together-wrap">
+            <div class="work-together-box">
+                <h3 class="work-together-article">Contact me to transform your ideas into exceptional solutions.</h3>
+                <address class="work-together-cont">
+                    <ul class="work-cont-list">
+                        <li class="work-cont-item">
+                            <a href="tel:+380904567890" class="work-cont-link" target="_blank">
+                                <svg class="work-cont-icon" width="24" height="24">
+
+                                    <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-phone"></use>
+
+                                </svg>
+                                +38 090 456 78 90
+                            </a>
+
+                        </li>
+                        <li class="work-cont-item">
+                            <a href="mailto:lloydjefferson@gmail.com" class="work-cont-link" target="_blank">
+                                <svg class="work-cont-icon" width="24" height="24">
+
+                                    <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-email"></use>
+
+                                </svg>
+                                lloydjefferson@gmail.com
+                            </a>
+
+                        </li>
+                        <li class="work-cont-item">
+                            <a href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%AE%D1%80%D1%96%D1%8F+%D0%86%D0%BB%D0%BB%D1%94%D0%BD%D0%BA%D0%B0,+12,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4651972,30.475216,17z/data=!3m1!4b1!4m15!1m8!3m7!1s0x40d4ce7874db2b63:0xd69ace3b27b8c44c!2z0LLRg9C70LjRhtGPINCu0YDRltGPINCG0LvQu9GU0L3QutCwLCAxMiwg0JrQuNGX0LIsIDAyMDAw!3b1!8m2!3d50.4651938!4d30.4777909!16s%2Fg%2F1tmxpjhz!3m5!1s0x40d4ce7874db2b63:0xd69ace3b27b8c44c!8m2!3d50.4651938!4d30.4777909!16s%2Fg%2F1tmxpjhz?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+                                class="work-cont-link" target="_blank">
+                                <svg class="work-cont-icon" width="24" height="24">
+
+                                    <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-location"></use>
+
+                                </svg>
+                                USA, New York
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <form class="work-form">
+                <div class="work-form-wrap">
+                    <div class="work-form-box">
+                        <label for="user-email" class="work-form-label">
+                            <input class="work-form-input" id="user-email" name="user-email" type="email"
+                                pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required placeholder="Your email*" />
+                            <svg class="visually-hidden work-form-icon" width="16" height="16">
+
+                                <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-success-filled"></use>
+
+                            </svg>
+                        </label>
+                        <p class="visually-hidden work-form-text">Invalid email, try again</p>
+                    </div>
+
+                    <label for="user-message">
+                        <textarea name="user-message" class="work-form-textarea" id="user-message" required
+                            placeholder="Message"></textarea>
+                    </label>
+
+                    <button type="submit" class="work-form-btn" data-modal-open>SEND MESSAGE</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<div class="backdrop">
+    <div class="modal">
+        <button type="button" class="modal-close-btn">
+            <svg class="modal-close-icon" width="20" height="20">
+                <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
+
+        <p class="modal-text">The manager will contact you shortly to discuss further details and opportunities for
+
+            cooperation. Please stay in touch.</p>
+    </div>
+</div>
     </main>
 
     <footer class="footer-page">
   <div class="container footer-container">
     <div class="footer-container-logo">
-      <a class="footer-logo" href="../index.html"
+      <a class="footer-logo" href="./index.html"
         >Lloyd<span class="footer-logo-jefferson">Jefferson.</span></a
       >
       <ul class="footer-list">
