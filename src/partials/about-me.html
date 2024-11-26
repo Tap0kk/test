@@ -1,4 +1,4 @@
-<section class="about-me-page" id="about-me">
+<section class="about-me-page">
   <div class="about-container container">
     <h2 class="about-title">About <span class="about-title-two">me</span></h2>
 
@@ -8,26 +8,27 @@
           <source
             media="(min-width: 1280px)"
             srcset="
-              /img/photo/about_desktop.jpg    1x,
-              /img/photo/about_desktop@2x.jpg 2x
+              /img/photo/about_desktop.webp    1x,
+              /img/photo/about_desktop@2x.webp 2x
             "
           />
           <source
             media="(min-width: 768px)"
             srcset="
-              /img/photo/about_tablet.jpg    1x,
-              /img/photo/about_tablet@2x.jpg 2x
+              /img/photo/about_tablet.webp    1x,
+              /img/photo/about_tablet@2x.webp 2x
             "
           />
           <source
             media="(max-width: 767px)"
             srcset="
-              /img/photo/about_mobile.jpg    1x,
-              /img/photo/about_mobile@2x.jpg 2x
+              /img/photo/about_mobile.webp    1x,
+              /img/photo/about_mobile@2x.webp 2x
             "
           />
           <img
-            src="/img/photo/about_mobile.jpg"
+            loading="lazy"
+            src="/img/photo/about_mobile.webp"
             alt="Lloyd Jefferson"
             width="320"
             height="374"
@@ -56,35 +57,33 @@
           </p>
         </div>
       </div>
+
       <div class="about-education-role">
-        <ul class="education-role-list">
-          <li class="education-role-list-item">
-            <h3 class="about-subtitle">EDUCATION</h3>
-            <ul class="education-role-sublist">
-              <li class="education-role-sublist-item">
-                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
-                York
-              </li>
-              <li class="education-role-sublist-item">
-                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
-                School, New York
-              </li>
-              <li class="education-role-sublist-item">
-                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
-              </li>
-            </ul>
-          </li>
-          <li class="education-role-list-item">
-            <h3 class="about-subtitle">ROLE</h3>
-            <ul class="education-role-sublist">
-              <li class="education-role-sublist-item">Frontend development</li>
-              <li class="education-role-sublist-item">
-                HeadlessCMS, Wordpress
-              </li>
-              <li class="education-role-sublist-item">Blender (enjoy)</li>
-            </ul>
-          </li>
-        </ul>
+        <div class="education">
+          <h3 class="about-subtitle">EDUCATION</h3>
+          <ul class="education-role-sublist">
+            <li class="education-role-sublist-item">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </li>
+            <li class="education-role-sublist-item">
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </li>
+            <li class="education-role-sublist-item">
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <h3 class="about-subtitle">ROLE</h3>
+          <ul class="education-role-sublist">
+            <li class="education-role-sublist-item">Frontend development</li>
+            <li class="education-role-sublist-item">HeadlessCMS, Wordpress</li>
+            <li class="education-role-sublist-item">Blender (enjoy)</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

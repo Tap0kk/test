@@ -45,6 +45,14 @@ window.addEventListener('DOMContentLoaded', () => {
       leftBtn.addEventListener('click', () => {
         swiper.slidePrev();
       });
+
+      document.addEventListener('keydown', event => {
+        if (event.key === 'ArrowRight') {
+          swiper.slideNext();
+        } else if (event.key === 'ArrowLeft') {
+          swiper.slidePrev();
+        }
+      });
     })
     .catch(function (error) {
       console.error(error);
@@ -59,7 +67,7 @@ function createMarkup(items) {
            <div class="reviews-text">
            ${review}
               <div class="autor-style">
-              <img class="reviews-photo" src="${avatar_url}" alt="Photo" width="40">
+              <img loading="lazy" class="reviews-photo" src="${avatar_url}" alt="Photo" width="40" height="40">
               <h4 class="reviews-subtitle">${author}</h4>
               </div>
            </div>

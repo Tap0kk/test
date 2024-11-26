@@ -10,6 +10,7 @@
   font-size: 52px;
   line-height: 1.23;
   letter-spacing: 0.03em;
+  transition: color 1s var(--transition);
 }
 .accent-title {
   color: var(--accent-color);
@@ -130,17 +131,17 @@
     max-width: 520px;
     max-height: 408px;
   }
-  .faq-decor {
+  .faq-page {
     background-image: url(/img/decor/decor_faq_desktop.png);
     background-repeat: no-repeat;
-    background-position: 50% 87%;
-    background-size: contain;
+    background-position: 24% 92%;
   }
   @media screen and (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
-    .faq-decor {
+    .faq-page {
       background-image: url(/img/decor/decor_faq_desktop@2x.png);
+      background-position: 11% 91%;
     }
   }
 }

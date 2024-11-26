@@ -1,4 +1,4 @@
-.work-together-container {
+.work-together-page {
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -11,6 +11,7 @@
     text-transform: uppercase;
     max-width: 253px;
     margin-bottom: 40px;
+    transition: color 1s var(--transition);
 }
 
 .work-together-accent {
@@ -54,6 +55,7 @@
     justify-content: center;
     flex-direction: row;
     gap: 16px;
+    transition: color 1s var(--transition);
 }
 
 .work-cont-link:focus {
@@ -84,6 +86,7 @@
     border-radius: 8px;
     background-color: var(--third-background);
     padding: 16px;
+    transition: border 1s var(--transition);
 }
 
 .work-form-icon {
@@ -119,6 +122,7 @@
     padding: 16px;
     resize: none;
     outline: transparent;
+    transition: border 1s var(--transition);
 }
 
 .work-form-input::placeholder,
@@ -144,6 +148,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--white);
+    transition: background-color 1s var(--transition);
 }
 
 .work-form-btn:focus {
@@ -151,19 +156,19 @@
 }
 
 @media screen and (min-width: 768px) {
-    .work-together-container {
+    .work-together-page {
         padding-top: 124px;
         padding-bottom: 124px;
         background-image: url(/img/decor/decor_work_tablet.png);
         background-repeat: no-repeat;
-        background-position: 91.5% 1.1%;
+        background-position: 93% 2%;
         background-size: 336px 260px;
     }
 
     @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-        .work-together-container {
+        .work-together-page {
             background-image: url(/img/decor/decor_work_tablet@2x.png);
         }
     }
@@ -198,19 +203,19 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .work-together-container {
+    .work-together-page {
         padding-top: 164px;
         padding-bottom: 164px;
         background-image: url(/img/decor/decor_work_desktop.png);
         background-repeat: no-repeat;
-        background-position: 96% 9%;
+        background-position: 75% 9%;
         background-size: 526px 408px;
     }
 
     @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-        .work-together-container {
+        .work-together-page {
             background-image: url(/img/decor/decor_work_desktop@2x.png);
         }
     }
@@ -230,8 +235,7 @@
     }
 
     .work-together-article {
-        margin: 0;
-        padding-bottom: 120px;
+        margin-bottom: 120px;
     }
 
     .work-together-cont {
@@ -255,6 +259,11 @@
         width: 592px;
     }
 
+    .work-form-input:hover,
+    .work-form-textarea:hover {
+        border: 1px solid var(--second-background);
+    }
+
     .work-form-btn:hover {
         background-color: var(--second-hover);
     }
@@ -273,9 +282,8 @@
     pointer-events: none;
     padding-left: 20px;
     padding-right: 20px;
-    transition: opacity 250ms var(--transition),
-        visibility 250ms var(--transition);
-
+    transition: opacity 1s var(--transition),
+        visibility 1s var(--transition);
 }
 
 .backdrop.is-open {
@@ -295,7 +303,7 @@
     padding: 48px 32px;
     transform: translate(-50%, -50%);
     background-color: var(--main-background);
-    transition: transform 250ms var(--transition);
+    transition: transform 1s var(--transition);
     z-index: 25;
 }
 
