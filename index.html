@@ -8,7 +8,7 @@
     <script type="module" crossorigin src="/test/index.js"></script>
     <link rel="modulepreload" crossorigin href="/test/assets/vendor-D3Pz1OW-.js">
     <link rel="stylesheet" crossorigin href="/test/assets/vendor-DsZ3AUy1.css">
-    <link rel="stylesheet" crossorigin href="/test/assets/index-sfRmu1a-.css">
+    <link rel="stylesheet" crossorigin href="/test/assets/index-BglhHQxc.css">
   </head>
   <body>
     <header class="header-page">
@@ -83,6 +83,7 @@
     <main>
       <section class="hero-page" id="hero">
   <div class="container hero-container">
+    <div class="hero-decor"></div>
     <div class="hero-wrapper-top">
       <h1 class="hero-title">Hello, I am <span>Fullstack developer</span></h1>
       <img
@@ -156,7 +157,9 @@
 
       <section class="about-me-page">
   <div class="about-container container">
-    <h2 class="about-title">About <span class="about-title-two">me</span></h2>
+    <h2 class="about-title" id="about-me">
+      About <span class="about-title-two">me</span>
+    </h2>
 
     <div class="about-content">
       <div class="about-picture-bio">
@@ -233,6 +236,7 @@
         </div>
       </div>
     </div>
+    <div class="about-decor"></div>
   </div>
 </section>
 
@@ -306,7 +310,8 @@
           loading="lazy"
           src="/test/assets/project_1-CD8yNIQz.webp"
           alt="1"
-          width="320"
+          width="300"
+          height="184"
           srcset="/test/assets/project_1@2x-DqZYQxQA.webp 2x"
           class="project-img"
         />
@@ -331,6 +336,7 @@
           src="/test/assets/project_2-BhG4w2KB.webp"
           alt="2"
           width="300"
+          height="184"  
           srcset="/test/assets/project_2@2x-tmeZXyIm.webp 2x"
           class="project-img"
         />
@@ -355,6 +361,7 @@
           src="/test/assets/project_3-B5Pidppd.webp"
           alt="3"
           width="300"
+          height="184"
           srcset="/test/assets/project_3@2x-CtfeIB2b.webp 2x"
           class="project-img"
         />
@@ -379,6 +386,7 @@
           src="/test/assets/project_4-CN7mtxku.webp"
           alt="4"
           width="300"
+          height="184"
           srcset="/test/assets/project_4@2x-BBHATH0l.webp 2x"
           class="project-img"
         />
@@ -403,6 +411,7 @@
           src="/test/assets/project_5-mszFITDI.webp"
           alt="5"
           width="300"
+          height="184"
           srcset="/test/assets/project_5@2x-m_WRAGw-.webp 2x"
           class="project-img"
         />
@@ -427,6 +436,7 @@
           src="/test/assets/project_6-DVPo_GD0.webp"
           alt="6"
           width="300"
+          height="184"
           srcset="/test/assets/project_6@2x-DhCGSfZI.webp 2x"
           class="project-img"
         />
@@ -451,6 +461,7 @@
           src="/test/assets/project_7-C2ZD8Azx.webp"
           alt="7"
           width="300"
+          height="184"
           srcset="/test/assets/project_7@2x-CLCe3e61.webp 2x"
           class="project-img"
         />
@@ -475,6 +486,7 @@
           src="/test/assets/project_8-BmFjLzmF.webp"
           alt="8"
           width="300"
+          height="184"
           srcset="/test/assets/project_8@2x-BSHqZrsi.webp 2x"
           class="project-img"
         />
@@ -499,6 +511,7 @@
           src="/test/assets/project_9-CuWZpSsY.webp"
           alt="9"
           width="300"
+          height="184"
           srcset="/test/assets/project_9@2x-CDy6Ek3e.webp 2x"
           class="project-img"
         />
@@ -523,6 +536,7 @@
           src="/test/assets/project_10-BBm7etNv.webp"
           alt="10"
           width="300"
+          height="184"
           srcset="/test/assets/project_10@2x-6iY2msrO.webp 2x"
           class="project-img"
         />
@@ -551,7 +565,6 @@
 
       <section class="benefits-page">
   <div class="container benefits-container">
-    <h4 class="visually-hidden">benefits</h4>
     <h2 class="benefits-title">
       <span class="benefits-span">BENEFITS</span> OF WORKING WITH ME
     </h2>
@@ -605,26 +618,28 @@
         </p>
       </li>
     </ul>
+    <div class="benefits-decor"></div>
   </div>
 </section>
 
       <section class="faq-page">
   <div class="accordion-container container">
+    <div class="faq-decor-container"></div>
     <div class="faq-decor">
       <h2 class="faq-title">
         Frequently Asked
         <span class="accent-title">Questions</span>
       </h2>
     </div>
-    <div class="accordion">
-      <div class="accordion-item">
-        <h3 class="accordion-subtitle"  aria-expanded="false">
+    <div class="accordion js-accordion">
+      <div class="accordion-item js-accordion-item">
+        <h3 class="accordion-subtitle js-accordion-subtitle">
           What programming languages are most often used in your project?
           <svg class="icon" width="32" height="32">
             <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-sign"></use>
           </svg>
         </h3>
-        <div class="accordion-body">
+        <div class="accordion-body js-accordion-body">
           <p class="accordion-text">
             In the field of web development, there are various technologies and
             programming languages. Typically, this includes a combination of
@@ -632,14 +647,14 @@
           </p>
         </div>
       </div>
-      <div class="accordion-item">
-        <h3 class="accordion-subtitle"  aria-expanded="false">
+      <div class="accordion-item js-accordion-item">
+        <h3 class="accordion-subtitle js-accordion-subtitle">
           What are the deadlines for the project?
           <svg class="icon" width="32" height="32">
             <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-sign"></use>
           </svg>
         </h3>
-        <div class="accordion-body">
+        <div class="accordion-body js-accordion-body">
           <p class="accordion-text">
             The terms of project implementation depend to a large extent on a
             number of factors, such as the scope of the project, its complexity,
@@ -649,14 +664,14 @@
           </p>
         </div>
       </div>
-      <div class="accordion-item">
-        <h3 class="accordion-subtitle"  aria-expanded="false">
+      <div class="accordion-item js-accordion-item">
+        <h3 class="accordion-subtitle js-accordion-subtitle">
           What payment methods do you accept?
           <svg class="icon" width="32" height="32">
             <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-sign"></use>
           </svg>
         </h3>
-        <div class="accordion-body">
+        <div class="accordion-body js-accordion-body">
           <p class="accordion-text">
             Payment through credit and debit cards such as Visa, MasterCard,
             specialized electronic payment systems such as PayPal, as well as
@@ -664,14 +679,14 @@
           </p>
         </div>
       </div>
-      <div class="accordion-item">
-        <h3 class="accordion-subtitle"  aria-expanded="false">
+      <div class="accordion-item js-accordion-item">
+        <h3 class="accordion-subtitle js-accordion-subtitle">
           How can I contact you?
           <svg class="icon" width="32" height="32">
             <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-sign"></use>
           </svg>
         </h3>
-        <div class="accordion-body">
+        <div class="accordion-body js-accordion-body">
           <p class="accordion-text">
             In the field of web development, there are various technologies and
             programming languages. Typically, this includes a combination of
@@ -679,14 +694,14 @@
           </p>
         </div>
       </div>
-      <div class="accordion-item">
-        <h3 class="accordion-subtitle" aria-expanded="false">
+      <div class="accordion-item js-accordion-item">
+        <h3 class="accordion-subtitle js-accordion-subtitle">
           Do you provide advice or support?
           <svg class="icon" width="32" height="32">
             <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-sign"></use>
           </svg>
         </h3>
-        <div class="accordion-body">
+        <div class="accordion-body js-accordion-body">
           <p class="accordion-text">
             The terms of project implementation depend to a large extent on a
             number of factors, such as the scope of the project, its complexity,
@@ -696,14 +711,14 @@
           </p>
         </div>
       </div>
-      <div class="accordion-item">
-        <h3 class="accordion-subtitle" aria-expanded="false">
+      <div class="accordion-item js-accordion-item">
+        <h3 class="accordion-subtitle js-accordion-subtitle">
           What does the process of developing a software product look like?
           <svg class="icon" width="32" height="32">
             <use href="/test/assets/symbol-defs-kMmFiqo-.svg#icon-sign"></use>
           </svg>
         </h3>
-        <div class="accordion-body">
+        <div class="accordion-body js-accordion-body">
           <p class="accordion-text">
             Payment through credit and debit cards such as Visa, MasterCard,
             specialized electronic payment systems such as PayPal, as well as
