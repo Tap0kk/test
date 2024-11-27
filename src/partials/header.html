@@ -1,67 +1,48 @@
 <header class="header-page">
-  <div class="header-container container">
-    <a class="header-logo" href="./index.html"
-      >Lloyd<span class="logo-green">jefferson.</span></a
-    >
+  <div class="container header-container">
+    <div class="header-menu">
+      <a href="../index.html" class="header-logo"
+        >Lloyd<span>Jefferson.</span></a
+      >
 
-    <nav class="header-nav">
-      <label for="switch" class="switch">
-        <input type="checkbox" name="switch" id="switch" />
-        <span class="slider round"></span>
-      </label>
+      <nav class="header-nav">
+        <label for="switch" class="switch">
+          <input type="checkbox" name="switch" id="switch" />
+          <span class="slider round"></span>
+        </label>
 
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link js-nav-link" href="#about-me"> About me </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-nav-link" href="#my-projects"> Projects </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-nav-link" href="#work-together"> Contacts </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="menu-baget js-menu-open">
-      <svg class="icon-baget" width="30" height="20">
-        <use href="/img/symbol-defs.svg#icon-baget"></use>
-      </svg>
-    </div>
-  </div>
-
-  <div class="mobile-menu js-mobile-menu">
-   <div class=".mobile-menu-container">
-      <div class="mobile-menu-article">
-        <a class="header-logo menu-logo" href="./index.html"
-          >Lloyd<span class="logo-green">jefferson.</span></a
-        >
-  
-        <div class="mobile-menu-close js-mobile-menu-close">
-          <svg class="menu-close-icon" width="16" height="16">
-            <use href="/img/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </div>
-      </div>
-  
-      <nav class="mobile-menu-nav">
-        <ul class="mobile-menu-nav-list">
-          <li class="mobile-menu-item">
-            <a class="mobile-menu-link js-nav-link" href="#about-me">
-              About me
-            </a>
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a href="" class="header-menu-link">About me</a>
           </li>
-          <li class="mobile-menu-item">
-            <a class="mobile-menu-link js-nav-link" href="#my-projects">
-              Projects
-            </a>
+          <li class="header-menu-item">
+            <a href="" class="header-menu-link">Projects</a>
           </li>
-          <li class="mobile-menu-item">
-            <a class="mobile-menu-link js-nav-link" href="#work-together">
-              Contacts
-            </a>
+          <li class="header-menu-item">
+            <a href="" class="header-menu-link">Contacts</a>
           </li>
         </ul>
       </nav>
-   </div>
+
+      <button class="mob-menu-btn js-menu-open">
+        <span class="menu-btn"></span>
+      </button>
+    </div>
+
+    <div class="mob-menu container js-mobile-menu">
+      <nav class="mobile-nav">
+        <ul class="mob-menu-list">
+          <li class="mob-menu-item">
+            <a href="" class="mob-menu-link">About me</a>
+          </li>
+          <li class="mob-menu-item">
+            <a href="" class="mob-menu-link">Projects</a>
+          </li>
+          <li class="mob-menu-item">
+            <a href="" class="mob-menu-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
